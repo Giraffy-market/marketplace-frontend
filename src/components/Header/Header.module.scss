@@ -1,0 +1,92 @@
+@use "../../assets/sass/utils/mixin" as mixin;
+@use "../../assets/sass/utils/variables" as vars;
+
+.header {
+  background-color: vars.$brown-bg;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.header_logo {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header_logo_img {
+  width: 60px;
+  height: 60px;
+}
+
+.header_logo_text {
+  font-family: "Newsreader", serif;
+  @include mixin.font-styles(24px, 400, 1);
+
+  color: vars.$light;
+}
+
+.header_search_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_search_input {
+  font-size: inherit;
+  padding: 9px 149px 9px 30px;
+
+  margin-right: -119px;
+  width: 589px;
+  height: 42px;
+
+  background: #fbfbf1;
+  /* Коричневий */
+  border: 1px solid vars.$button-yellow-stroke;
+  border-radius: 10px;
+}
+
+.header_search_button {
+  height: 42px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding: 10px;
+  @include mixin.flex-center();
+
+  font-family: "Open Sans", sans-serif;
+
+  @include mixin.font-styles(16px, 400, 22px);
+  color: vars.$button-yellow-stroke;
+}
+
+.header_search_location {
+  @include mixin.flex-center();
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+}
+
+.header_search_icon {
+  color: vars.$button-yellow-stroke;
+}
+
+.header_profile_icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header_profile_icon {
+  color: vars.$light;
+}
+
+.header_profile_person {
+  color: white;
+}

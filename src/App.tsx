@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router";
-import "./App.css";
 import MainLayout from "./layouts/MainLayout/MainLayout";
 import HomePage from "./pages/HomePage/HomePage";
 
