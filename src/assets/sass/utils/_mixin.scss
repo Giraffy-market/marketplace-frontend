@@ -1,0 +1,21 @@
+@mixin font-styles(
+  $font-size,
+  $font-weight,
+  $line-height: normal,
+  $letter-spacing: normal
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin flex-center(
+  $justify-content: center,
+  $align-items: center,
+  $display: flex
+) {
+  justify-content: $justify-content;
+  align-items: $align-items;
+  display: $display;
+}
